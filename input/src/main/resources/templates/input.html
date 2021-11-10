@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE-edge"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="seung"/>
+    <meta name="description" content="Input프로젝트 input페이지"/>
+    <title>Input_input</title>
+</head>
+<body>
+    <h1>데이터 입력 페이지</h1>
+    <!-- form 태그 안에 있는 데이터를 전송 -->
+    <!-- form 태그에 method를 작성하지 않으면 GET(기본값)으로 자동 설정 -->
+    <form action="inputDB", method="GET">
+
+        <p>data1 : <input type="text" name="data1" /></p>
+        <p>data2 : <input type="text" name="data2" placeholder="숫자를 입력해주세요." /></p>
+
+        <!-- name 과 id의 차이점-->
+        <!-- (1) name은 controller로 보내는 이름 -->
+        <!-- (2) id는 현재 HTML에서 사용하는 이름 -->
+
+        <input type="submit" value="전송" />
+    </form>
+
+</body>
+</html>
